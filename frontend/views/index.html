@@ -22,26 +22,45 @@
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero">
             <h2>Record, Save, and Share Videos Seamlessly</h2>
             <p>Welcome to Lupi, your go-to platform for non-stop video recording, meeting, and screen-sharing functionalities.</p>
         </section>
 
+        <!-- Video Recording Section -->
         <section class="video-container">
-            <video id="videoPlayer" controls></video>
+            <video id="videoPlayer" autoplay muted controls></video>
             <div class="buttons">
                 <button id="recordBtn">Start Recording</button>
                 <button id="stopBtn" disabled>Stop Recording</button>
                 <button id="saveBtn" disabled>Save</button>
                 <button id="deleteBtn" disabled>Delete</button>
             </div>
+
+            <!-- Filter Controls -->
+            <div class="filters">
+                <label for="filterSelect">Choose a filter:</label>
+                <select id="filterSelect">
+                    <option value="none">None</option>
+                    <option value="grayscale(100%)">Grayscale</option>
+                    <option value="sepia(100%)">Sepia</option>
+                    <option value="invert(100%)">Invert</option>
+                    <option value="blur(5px)">Blur</option>
+                    <option value="brightness(150%)">Brightness</option>
+                </select>
+            </div>
         </section>
 
+        <!-- Meeting Section -->
         <section class="meeting-section">
             <h3>Start or Join a Meeting</h3>
             <button id="startMeetingBtn">Start Meeting</button>
             <button id="shareScreenBtn">Share Screen</button>
         </section>
+
+        <!-- Top-right corner container for video links -->
+        <div id="savedVideosLinksContainer" class="video-links-container"></div>
     </main>
 
     <footer>

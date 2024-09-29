@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lupi Video Recording System</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <h1>Lupi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Record, Save, and Share Videos Seamlessly</h2>
+            <p>Welcome to Lupi, your go-to platform for non-stop video recording, meeting, and screen-sharing functionalities.</p>
+        </section>
+
+        <section class="video-container">
+            <video id="videoPlayer" controls></video>
+            <div class="buttons">
+                <button id="recordBtn">Start Recording</button>
+                <button id="stopBtn" disabled>Stop Recording</button>
+                <button id="saveBtn" disabled>Save</button>
+                <button id="deleteBtn" disabled>Delete</button>
+            </div>
+        </section>
+
+        <section class="meeting-section">
+            <h3>Start or Join a Meeting</h3>
+            <button id="startMeetingBtn">Start Meeting</button>
+            <button id="shareScreenBtn">Share Screen</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lupi. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
